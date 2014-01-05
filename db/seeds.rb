@@ -13,7 +13,7 @@ party = Party.new()
 
 # File reading starts from here 
        
-book = Spreadsheet.open("/home/mridul/Desktop/Ruby\ Scripts/ls-2009-data_revised.xls")
+book = Spreadsheet.open("./db/ls-2009-data_revised.xls")
 sheet1 = book.worksheet('Sheet1') # can use an index or worksheet name
 
 #Initiliazing party table

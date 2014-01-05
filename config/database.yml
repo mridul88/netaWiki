@@ -6,12 +6,12 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ddudntnpsgv88s
+  database: firstdb     
   pool: 5
   timeout: 5000
-  username: cchlraerjhdadq
-  password: UdmhB9mekDx2LUvYqZFM3tVdTO
-  
+  username: mridul
+  password: mannu
+    
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
