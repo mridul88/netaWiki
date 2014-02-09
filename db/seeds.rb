@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Person.delete_all
 Party.delete_all
+Leader.delete_all
 party_short_form = Array.new()
 party = Party.new()
 
@@ -45,7 +45,7 @@ sheet1.each do |row|
   end
   
 # Add it to table
-    Person.create!(:name=>name, :constituency=>constituency, :highest_degree=>highest_degree, :image_path=>nil, 
+    Leader.create!(:name=>name, :constituency=>constituency, :highest_degree=>highest_degree, :image_path=>nil, 
                   :birth_place=>nil, :sex=>nil, :birth_date=>nil,:party_id=>party_id,:no_criminal_case=>no_criminal_case, 
                   :no_civil_case=>nil, :convicted_case=>convicted_case, :accused_case=> accused_case, 
                   :resume=>nil, :details=>nil, :immovable_asset=>immovable_asset, :movable_asset=>movable_asset, 

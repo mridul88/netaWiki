@@ -3,8 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def leaders
-    @leaders_list = Person.pluck(:name)
-    @leaders_list.sort_by!{|i| i[0]}
+    
   end
 
   def parties

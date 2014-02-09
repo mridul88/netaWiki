@@ -1,9 +1,9 @@
 BookApp1::Application.routes.draw do
+  resources :leaders
+  
   root to: 'static_pages#home'
   
   match '/home', to:'static_pages#home', via:'get'
-
-  match '/leaders', to:'static_pages#leaders', via: 'get'
 
   match '/parties', to:'static_pages#parties', via:'get'
 

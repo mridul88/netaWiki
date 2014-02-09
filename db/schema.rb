@@ -11,22 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131228075743) do
+ActiveRecord::Schema.define(:version => 20140105105115) do
 
-  create_table "parties", :force => true do |t|
-    t.string   "name"
-    t.string   "short_form"
-    t.string   "type"
-    t.string   "president"
-    t.string   "symbol_image_path"
-    t.integer  "no_mp"
-    t.text     "details"
-    t.text     "motto"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-  end
-
-  create_table "people", :force => true do |t|
+  create_table "leaders", :force => true do |t|
     t.string   "name"
     t.string   "constituency"
     t.string   "highest_degree"
@@ -46,6 +33,19 @@ ActiveRecord::Schema.define(:version => 20131228075743) do
     t.decimal  "liability",        :precision => 15, :scale => 2
     t.datetime "created_at",                                      :null => false
     t.datetime "updated_at",                                      :null => false
+  end
+
+  create_table "parties", :force => true do |t|
+    t.string   "name"
+    t.string   "short_form"
+    t.string   "type"
+    t.string   "president"
+    t.string   "symbol_image_path"
+    t.integer  "no_mp"
+    t.text     "details"
+    t.text     "motto"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
 end

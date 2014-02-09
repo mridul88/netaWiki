@@ -1,0 +1,10 @@
+<% provide(:title, 'Leaders') %>
+<p>
+	<ul class="leaders">	
+	<% @leaders.each do |person| %>
+	<li>
+		 <%= link_to person.titleize, leader_url =%>
+	</li>
+	<% end%>
+	</ul>
+</p>
