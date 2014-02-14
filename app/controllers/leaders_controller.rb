@@ -2,13 +2,13 @@ class LeadersController < ApplicationController
   
   
   def index
-    @leaders = Leader.pluck(:name)
-    @leaders.sort_by!{|i| i[0]}
+    @leaders = Leader.all
+    @leaders.sort_by!{|i| i.name}
   end
   
   def show
-     @leaders = Leader.pluck(:name)
-    @leaders.sort_by!{|i| i[0]}
+     @leader = Leader.find(params[:id])
+     p @leader
   end
   
 end
